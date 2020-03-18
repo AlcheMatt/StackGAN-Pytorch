@@ -1,11 +1,11 @@
-CONFIG_NAME: 'stageII'
-CAPSTONE: False
+CONFIG_NAME: 'Capstone_W4'
+CAPSTONE: True
 DATASET_NAME: 'coco'
 EMBEDDING_TYPE: 'cnn-rnn'
 GPU_ID: '0,1'
 Z_DIM: 100
 NET_G: '../models/coco/netG_epoch_90.pth'
-DATA_DIR: '../data/coco'
+DATA_DIR: '../data/w4'
 WORKERS: 4
 IMSIZE: 256
 STAGE: 2

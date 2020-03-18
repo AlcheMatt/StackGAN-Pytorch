@@ -1,5 +1,5 @@
 CONFIG_NAME: 'stageI'
-
+CAPSTONE: False
 DATASET_NAME: 'coco'
 EMBEDDING_TYPE: 'cnn-rnn'
 GPU_ID: '0,1'
