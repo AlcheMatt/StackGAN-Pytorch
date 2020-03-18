@@ -72,9 +72,6 @@ if __name__ == "__main__":
         algo = GANTrainer(output_dir)
         algo.train(dataloader, cfg.STAGE)
     else:
-        if cfg.CAPSTONE:
-            datapath = '{}/input_{}.txt'.format(cfg.DATA_DIR, str(int(datetime.timestamp(datetime.datetime.now()))))
-        else:
-            datapath= '%s/test/val_captions.t7' % (cfg.DATA_DIR)
+        datapath= '%s/test/val_captions.t7' % (cfg.DATA_DIR)
         algo = GANTrainer(output_dir)
         algo.sample(datapath, cfg.STAGE)
